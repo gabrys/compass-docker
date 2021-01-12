@@ -1,0 +1,16 @@
+{
+  "name": "compass-docker",
+  "version": "1.0.0",
+  "description": "Run compass through docker to avoid installing Ruby",
+  "main": "index.js",
+  "repository": "git@github.com:gabrys/compass-docker.git",
+  "author": "Piotr Gabryjeluk <piotr.gabryjeluk@shortlist.co>",
+  "license": "MIT",
+  "bin": {
+    "compass": "compass.js"
+  },
+  "scripts": {
+    "postinstall": "node bat/install_bat.js",
+    "preuninstall": "node bat/uninstall_bat.js"
+  }
+}
