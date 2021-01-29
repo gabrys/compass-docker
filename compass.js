@@ -31,7 +31,7 @@ function main(args) {
   const docker_args = [].concat(
     ['run'],
     run_opts,
-    ['gabrys/compass'],
+    ['docker.io/gabrys/compass'],
     ['compass'],
     compass_args
   );
